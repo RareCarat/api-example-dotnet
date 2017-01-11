@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Rare Carat API Example - PHP</title>
+    <link rel="stylesheet" href="https://api.rarecarat.com/css/site.min.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Rare Carat .NET Core</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://api.rarecarat.com">API Documentation</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <div class="">
+                <h1>API Example - .NET Core</h1>
+                <p>In here you will find a simple .NET Core application that communicates with the Rare Carat API. It is capable os listing, creating, updating, and deleting resources. If you have any questions, feel free to email us at <a href="mailto:api@rarecarat.com">api@rarecarat.com</a>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <section>
+                    <h2 id="supported-operations" class="page-header">Supported Operations</h2>
+                    <p>In this example, this application communicates with a SQL Server database to get the diamonds. For the communication with Rare Carat API, it uses JSON as the data format.</p>
+                    <h3>JSON</h3>
+                    <ul>
+                        <li><a target="_blank" href="/home/list"><code>GET</code> /diamonds (index)</a></li>
+                        <li><a target="_blank" href="/home/create"><code>POST</code> /diamonds (create)</a></li>
+                        <li><a target="_blank" href="/home/update/?id=123456789"><code>PATCH</code> /diamonds/{id} (update single)</a></li>
+                        <li><a target="_blank" href="/home/delete/?id=123456789"><code>DELETE</code> /diamonds/{id} (delete single)</a></li>
+                        <li><a target="_blank" href="/home/delete"><code>DELETE</code> /diamonds/ (delete all)</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

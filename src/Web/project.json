@@ -1,0 +1,53 @@
+{
+  "buildOptions": {
+    "copyToOutput": {
+      "include": [ "wwwroot", "Views", "appsettings*.json" ]
+    },
+    "debugType": "portable",
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true
+  },
+
+  "publishOptions": {
+    "include": [ "wwwroot", "Views", "appsettings*.json" ],
+    "exclude": [ "**.user", "**.vspscc" ]
+  },
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Diagnostics": "1.1.0",
+    "Microsoft.AspNetCore.Mvc": "1.1.0",
+    "Microsoft.AspNetCore.Mvc.TagHelpers": "1.1.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.1.0",
+    "Microsoft.AspNetCore.StaticFiles": "1.1.0",
+    "Microsoft.EntityFrameworkCore.Design": "1.1.0",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+    "Microsoft.Extensions.Configuration.CommandLine": "1.1.0",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.1.0",
+    "Microsoft.Extensions.Configuration.Json": "1.1.0",
+    "Microsoft.Extensions.Logging.Console": "1.1.0",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.1.0"
+    }
+  },
+
+  "frameworks": {
+    "netcoreapp1.1": {
+      "imports": [
+        "portable-net45+wp80+win8+wpa81+dnxcore50"
+      ]
+    }
+  },
+
+  "scripts": {},
+
+  "tools": {
+    "Microsoft.EntityFrameworkCore.Tools": {
+      "version": "1.1.0-preview4-final",
+      "imports": "portable-net45+win8+dnxcore50"
+    },
+    "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4-final"
+  },
+
+  "version": "1.0.0"
+}
